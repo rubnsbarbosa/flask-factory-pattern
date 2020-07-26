@@ -1,5 +1,8 @@
+from flask import Flask
+
+
 ''' Flask Extension '''
-def init_app(app):
+def init_app(app: Flask):
 
     @app.route("/")
     def index():
@@ -8,4 +11,3 @@ def init_app(app):
     @app.route("/about")
     def about():
         return "delivery 2020"
-        
